@@ -302,7 +302,7 @@ function addArtist(array, id, name, years, genre, nationality,bio) {
     bio:bio,
   };
   array.push(willBuchanan);
-  return array[20]
+  return array
   
 }
 console.log(addArtist(artists, 20, 'William Buchanan', '1988 - 10/8/2021', 'Web Design', 'American', 'setences'));
