@@ -270,12 +270,11 @@ function removeArtist(array, index) {
     if (i === index) {
       array.splice(index, 1);
   }
-  
-  
 }
-return artists.length;
+return array.length;
 }
-console.log(removeArtist(artists, 5));
+
+// console.log(removeArtist(artists, 5));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -293,9 +292,20 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array, id, name, years, genre, nationality,bio) {
+  const willBuchanan = { 
+    id:id,
+    name:name,
+    years:years,
+    genre:genre,
+    nationality:nationality,
+    bio:bio,
+  };
+  array.push(willBuchanan);
+  return array[20]
+  
 }
+console.log(addArtist(artists, 20, 'William Buchanan', '1988 - 10/8/2021', 'Web Design', 'American', 'setences'));
 
 
 
